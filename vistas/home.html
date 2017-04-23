@@ -1,0 +1,28 @@
+<div class="card">
+                
+    <div class="card-tabs">
+      <ul class="tabs tabs-fixed-width">
+        <li class="tab"><a class="active" href="#/" style="    border-bottom: 1px solid;">POST</a></li>
+        <li class="tab"><a href="#/user">USUARIO</a></li>
+      </ul>
+    </div>
+    <div class="card-content grey lighten-4">
+      <div id="test4">
+
+    <div class="col s12 m8 l9">
+            <div class="card  light-white" ng-repeat="post in posts" ng-cloak>
+              <div class="card-content black-text">
+                <span class="card-title" style="color:red;">{{post.title}}</span>
+                <p>{{post.body}}</p>
+              </div>
+              <div class="card-action">
+                <a href="#/post/{{post.id}}" class="orange-text text-accent-1">Leer más</a>
+                <a href="#" class="blue-text text-accent-1">Editar</a>
+                <a href="#" class="red-text text-accent-1">Eliminar</a>
+              </div>
+            </div>
+        </div>
+
+      </div>
+    </div>
+</div>
